@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dojo - Expenses</title>
+    <link rel="icon" href="../multimedia/icono.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body class="fitnessBody">
+
+    <aside class="homeInfo">
+        <p>All the content and usage of this website is free, please help us sharing the website with your friends to keep growing our community</p>
+    </aside>
+
+    <header class="fitnessTitle">
+        <h1>
+            <a href="../index.html">The Dojo</a>  
+        </h1>
+
+        <h2>Expenses-富</h2>
+
+        <nav>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./fitness.html">Fitness</a></li>
+            <li><a href="./study.html">Study</a></li>
+        </nav>
+    </header>
+
+
+
+    <main class="calorieBody">
+        <div class="gridBudget">
+            <div class="gridBudgetHijo">
+                <div class="budgetDashboard">
+                    <h3>Record table</h3>
+                    <div class="toggle">
+                        <div class="tab1">Expenses</div>
+                        <div class="tab2">Income</div>
+                        <div class="tab3 active">All</div>
+                    </div>
+                </div>
+                <div id="income" class="hide">
+                    <ul class="list"></ul>
+                    <div class="input">
+                        <input type="text" id="incomeTitleInput" class="form-control" name="title" placeholder="Title">
+                        <input type="number" id="incomeAmountInput" class="form-control" name="amount" placeholder="0$">
+                        <div class="addIncome">+</i></div>
+                    </div>
+                </div>
+                <div id="expense" class="hide">
+                    <ul class="list"></ul>
+                    <div class="input">
+                        <input type="text" id="expenseTitleInput"class="form-control" name="title" placeholder="Title">
+                        <input type="number" id="expenseAmountInput"class="form-control" name="amount" placeholder="0$">
+                        <div class="addExpense">+</div>
+                    </div>
+                </div>
+                <div id="all">
+                    <ul class="list"></ul>
+                </div>
+            </div>
+            <div class="expenseInfoContainer">
+
+                <div class="budgetHeader">
+                    <div class="balance">
+                        <div>
+                            Balance
+                        </div>
+                        <div class="value">
+                    
+                        </div>
+                    </div>
+                    <div class="ins">
+                            <div>
+                                Income
+                            </div>
+                            <div class="incomeTotal">
+                                
+                            </div>
+                    </div>
+                    <div class="outcome">
+                            <div>
+                                Outcome
+                            </div>
+                            <div class="outcomeTotal">
+                                
+                            </div>
+                    </div>
+                </div>
+
+                <h3>Keep track on your expenses</h3>
+
+                <div class="textoBudget">
+                    <p>
+                        <strong>Income</strong> <br>
+                        Whether you have one or more sources of income, you have to manage it well because you likely have taxes to pay, as well as other deductions like health insurance. <br>
+                        
+                        So, it's important to understand that your gross pay does not equal the amount of money available for you to spend. Your after-tax pay would be lower than your pre-tax income.<br><br>
+                        
+                        <strong>Spending - Outcome</strong> <br>
+                        Your spending includes bills, rent, mortgage, shopping, groceries, debt payments, and donations. Do you constantly overspend or buy things you don’t need? Money management skills help you understand how much your monthly expenses are and help you budget within your income.<br><br>
+                        
+                        <strong>Saving</strong><br>
+                        Having money put away for a rainy day can save you from taking on debt in times of emergency. Also, sharpening your personal finance skills can help you find ways to save whether you’re making a lot of money or not.<br><br>
+                        
+                        <strong>Investing</strong><br>
+                        Investing grows your money for the future and helps you reach your financial goals quicker. There are so many ways to invest. And with proper financial education, you can choose the right types of investments that fit your needs, personality, and goals.<br><br>
+                        
+                        <strong>Debt</strong><br>
+                        Debt is inevitable because you use it to buy cars, houses, and other assets. But when you take on debt, you need to understand how it affects your future spending and how to manage it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="homeFooter">
+        <div>
+            <h6>The Dojo</h6>
+        </div>
+        <ul>
+            <span>All Rights Reserved. 2022</span>
+        </ul>
+    </footer>
+
+    <script src="../public/expenses.js"></script>
+</body>
+
+</html>

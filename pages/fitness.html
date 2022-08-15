@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dojo - Fitness</title>
+    <link rel="icon" href="../multimedia/icono.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+</head>
+
+<body class="fitnessBody">
+    <aside class="homeInfo">
+        <p>All the content and usage of this website is free, please help us sharing the website with your friends to keep growing our community</p>
+    </aside>
+
+    <header class="fitnessTitle">
+        <h1>
+            <a href="../index.html">The Dojo</a>  
+        </h1>
+
+        <h2>Fitness - 力</h2>
+
+        <nav>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./expenses.html">Expenses</a></li>
+            <li><a href="./study.html">Study</a></li>
+        </nav>
+    </header>
+
+    <main class="calorieBody">
+        <section class="calorieSection">
+            <div class="calorieText">
+                <h3>Calorie counter</h3>
+                <p> It's crucial to know how many calories per day you should consume, so we'll help you discover how much you need with this awesome tool. <br> <br>
+                
+                Every time we eat we're providing energy to our body, the way we measure it is through calories. <br>
+
+                Just for being alive, we burn energy. This burn it's known as basal metabolism. <br>
+                </p>
+                <img src="../multimedia/frutas.jpg" alt="">
+            </div>
+            <div class="calorieCounter">
+                <h5>Calculate your daily calories!</h5>
+                <form class="calorieForm" id="form">
+                    <div class="formGroup">
+                        <label for="gender">Select your sex</label><br>
+                        <select class="form-select" id="gender">
+                            <option value="---" selected disabled></option>
+                            <option value="male">Masculine</option>
+                            <option value="female">Femenine</option>
+                        </select>
+                    </div>
+                    <div class="formGroup">
+                        <label for="age">Age:</label><br>
+                        <input class="form-control text-center" type="number" id="age" placeholder="Example: 21 yo">
+                    </div>
+                    <div class="formGroup">
+                        <label for="weight">Weight:</label><br>
+                        <input class="form-control text-center" type="number" id="weight" placeholder="Example: 70 kg">
+                    </div>
+                    <div class="formGroup">
+                        <label for="height">Height:</label><br>
+                        <input class="form-control  text-center" type="number"id="height" placeholder="Example: 180 cm">
+                    </div>
+                    <div class="formGroup">
+                        <label for="activityLevel">How much physic activity you have during the week:</label><br>
+                        <select class="form-select" id="activityLevel" >
+                            <option value="---" selected disabled></option>
+                            <option value="1.2">Sedentarie</option>
+                            <option value="1.375">Little activty(Activity 2 times per week)</option>
+                            <option value="1.55">Moderate activty(Activity 3 times per week)</option>
+                            <option value="1.725">Intense activity(Activity 4 times per week)</option>
+                            <option value="1.9">Very intense activity(Activity every day)</option>
+                        </select>
+                    </div>
+                    <div class="formGroup">
+                        <button type="submit" class="btn btn-light">Calcular</button>
+                    </div>
+                </form>
+                <div id="result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="homeFooter">
+        <div>
+            <h6>The Dojo</h6>
+        </div>
+        <ul>
+            <span>All Rights Reserved. 2022</span>
+        </ul>
+    </footer>
+
+    <script src="../public/fitness.js"></script>
+</body>
+
+</html>

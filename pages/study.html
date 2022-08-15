@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dojo - Study Session</title>
+    <link rel="icon" href="../multimedia/icono.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<body id="bodyFitness">
+    <aside class="homeInfo">
+        <p>All the content and usage of this website is free, please help us sharing the website with your friends to keep growing our community</p>
+    </aside>
+
+    <header class="fitnessTitle">
+        <h1>
+            <a href="../index.html">The Dojo</a>  
+        </h1>
+
+        <h2>Study - 知識</h2>
+
+        <nav>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./fitness.html">Fitness</a></li>
+            <li><a href="./expenses.html">Expenses</a></li>
+        </nav>
+    </header>
+
+    <main class="studyMain">
+
+        <section class="introStudy">
+            <h2>What's the Pomodoro Technique?</h2>
+            <p>
+                This popular time management method asks you to alternate pomodoros — focused work sessions — with frequent short breaks to promote sustained concentration and stave off mental fatigue. <br>
+                
+                This method was developed in the late 1980s by then university student Francesco Cirillo. Cirillo was struggling to focus on his studies and complete assignments. Feeling overwhelmed, he asked himself to commit to just 10 minutes of focused study time. Encouraged by the challenge, he found a tomato (pomodoro in Italian) shaped kitchen timer, and the Pomodoro technique was born.
+            </p>
+            <h2>How to use it</h2>
+            <ol>
+                <li>Get a to-do list and a timer.</li>
+                <li>Set your timer for 50 minutes, and focus on a single task until the timer goes down to 0.</li>
+                <li>When your session ends, mark off one pomodoro cycle and record what you completed. </li>
+                <li>Then enjoy a ten-minute break.</li>
+            </ol>
+        </section>
+        
+        <!--Pomodoro clock-->
+
+        <section class="pomodoroStudy">
+            <div class="timerStudyContainer">
+                <!--Work Timer-->
+                <div id="workTimer" class="timerStudyItem">
+                    <h5>Work:</h5>
+                    <span id="w_minutes">50</span><span>:</span><span id="w_seconds">00</span>
+                </div>
+        
+                <!--Cycle Counter-->
+                <div class="timerStudyItem">
+                    <h5>Cycles:</h5>
+                    <span id="counter">0</span>
+                </div>
+
+                <!--Break Timer-->
+                <div id="breakTimer" class="timerStudyItem">
+                    <h5>Break:</h5>
+                    <span id="b_minutes">10</span><span>:</span><span id="b_seconds">00</span>
+                </div>
+                <div class="timerStudyButtons">
+                    <button id="start" class="btn btn-success">Start</button>
+                    <button id="stop" class="btn btn-warning">Pause</button>
+                    <button id="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+            <!--Quotes-->  
+            <div class="quotesContainer">
+                <h4>Get Inspired with a Quote:</h4>
+                <div>
+                    <div>
+                        <p id="quote"></p>
+                        <p id="author"></p>
+                    </div>
+                    <button class="get-quote">Get Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="todoSection">
+            <div class="todoText">
+                <h2>What is a ToDo List?</h2>
+                <p>
+                    The definition is a simple one. It’s a list of tasks you need to complete, or things that you want to do. <br>
+                    Having a list of everything you need to do written down in one place means you shouldn’t forget anything important. By prioritising the tasks in the list you plan the order in which you’re going to do them and can quickly see what needs your immediate attention and what tasks you can leave until a little later.
+                </p>
+                <h2>How to use it</h2>
+                <ol>
+                    <li>Add a task clicking on "Add" or pressing "Enter".</li>
+                    <li>Work on your tasks.</li>
+                    <li>When a task is completed you can delete it from the list.</li>
+                </ol>
+            </div>
+            <div class="todoList">
+                <h3>Task list</h3>
+
+                <div class="todoInputContainer">
+                    <input type="text" class="txtb" placeholder="Add a new task">
+                    <button id="newTask">Add</button>
+                </div>
+                <div class="notcomp">
+                </div>
+            </div>
+        </section>
+    
+
+     
+    
+    </main>
+
+    <footer class="homeFooter">
+        <div>
+            <h6>The Dojo</h6>
+        </div>
+        <ul>
+            <span>All Rights Reserved. 2022</span>
+        </ul>
+    </footer>
+
+    <script src="../public/todo.js"></script>
+    <script src="../public/study.js"></script>
+</body>
+</html>

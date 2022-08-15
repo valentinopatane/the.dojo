@@ -1,0 +1,1007 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*-----------------------------------Portada-----------------------------------*/
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.homeInfo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    animation: 2.2s ease 0s normal forwards 1 appear;
+}
+.homeInfo p{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeInfo p::after{
+    position: absolute;
+    top: 0;
+    right: -230px;
+    width: 220px;
+    height: 50%;
+    z-index: 1;
+    content: "";
+    border-bottom: 1px solid #000;
+}
+.homeInfo p::before{
+    position: absolute;
+    top: 0;
+    left: -230px;
+    width: 220px;
+    height: 50%;
+    z-index: 1;
+    content: "";
+    border-bottom: 1px solid #000;
+}
+.homeNav{
+    width: 65%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeNav ul{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: relative;
+    list-style: none;
+    animation: 1.7s ease 0s normal forwards 1 appear;
+    margin-right: 400px;
+}
+.homeNav ul::before{
+    content: "";
+    border-right: .1em solid #000;
+    width: 0.1em;
+    height: 54%;
+    left: 6px;
+    position: absolute;
+    z-index: -1;
+}
+.homeNav ul li{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 27px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeNav a{
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    color: #000;
+}
+.homeNav ul li a:hover{
+    transition: all 0.3s ease-in;
+    color: #cf0000
+}
+.homeNav ul li::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-right: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+}
+.homeNav ul li:hover::before{
+    content: "";
+    background-size: 10px;
+    background-color: #cf0000;
+    transition: all 0.3s ease-in;
+}
+.homeTitle{
+    width: 35%;
+    height: 95%;
+    animation: appear 1s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@keyframes appear{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+.homeTitle h1{
+    font-size: 100px;
+    color: #cf0000;
+    font-family: 'Kaushan Script', cursive;
+}
+.homeTitle p{
+    margin: 25px 0 0 21px;
+    font-size: 25px;
+    color: #000;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 200;
+}
+.homeFooter{
+    animation: 2.2s ease 0s normal forwards 1 appear;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px 10px 100px;
+}
+.homeFooter div{
+    display: flex;
+    align-items: center;
+}
+.homeFooter h6{
+    font-size: 18px;
+    margin-right: 15px;
+    font-family: 'Kaushan Script', cursive;
+    color: #cf0000;
+}
+.homeFooter span{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size: 13px;
+}
+.homeFooter ul{
+    display: flex;
+    width: 10%;
+    list-style: none;
+    justify-content: space-evenly;
+    color: #cf0000;
+}
+
+@media (max-width: 2560px){
+    .homeNav ul::before{
+        height: 53%;
+    }
+}
+
+@media (max-width: 1440px){
+    .homeNav ul{
+        margin-right: 100px;
+    }
+    .homeNav ul li{
+        font-size: 24px;
+    }
+    .homeTitle h1{
+        font-size: 80px;
+    }
+    .homeTitle p{
+        font-size: 22px;
+    }
+}
+@media (max-width: 1024px){
+    .homeInfo p::after{
+        right: -90px;
+        width: 80px;
+    }
+    .homeInfo p::before{
+        left: -90px;
+        width: 80px;
+    }
+    .homeNav{
+        width: 50%;
+    }
+    .homeTitle{
+        width: 50%;
+        align-items: center;
+    }
+}
+@media (max-width: 768px){
+    .homeInfo{
+        font-size: 10px;
+    }
+    .homeInfo p::after{
+        right: 0px;
+        width: 0px;
+        height: 0;
+    }
+    .homeInfo p::before{
+        right: 0px;
+        width: 0px;
+        height: 0;
+    }
+    .homeNav{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .homeTitle{
+        width: 50%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .homeTitle h1{
+        font-size: 70px;
+    }
+    .homeTitle p{
+        font-size: 20px;
+    }
+    .homeNav ul li{
+        font-size: 20px;
+    }
+    .homeNav ul::before{
+        height: 50%;
+    }
+}
+@media (max-width: 425px){
+    .home{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .homeInfo{
+        text-align: center;
+        padding: 40px;
+    }
+    .homeNav{
+        margin-top: 20px;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .homeNav ul{
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-direction: row;
+        height: 100%;
+        margin-right: 0px;
+    }
+    .homeNav ul::before{
+        display: none;
+    }
+    .homeNav ul li::before{
+        display: none;
+    }
+    .homeTitle{
+        width: 100%;
+        height: 40%;
+        align-items: center;
+        justify-content: start;
+    }
+    .homeTitle h1{
+        margin-right: 20px;
+        font-size: 70px;
+    }
+    .homeTitle p{
+        font-size: 20px;
+        margin-right: 20px;
+
+    }
+    .homeNav ul li{
+        font-size: 20px;
+        text-decoration: underline 1px;
+    }
+    .homeNav ul::before{
+        height: 50%;
+    }
+    .homeFooter{
+        flex-direction: column;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .homeFooter ul{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+/*----------------------------------------------------------FITNESS----------------------------------------------------------------------*/
+.fitnessBody{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fitnessTitle{
+    margin-top: 35px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #cf0000;
+    z-index: 10;
+    position: relative;
+}
+.fitnessTitle h1{
+    width: 33%;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fitnessTitle h1 a {
+    color:#cf0000 ;
+    text-decoration: none;
+}
+.fitnessTitle h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 38px;
+    width: 33%;
+}
+.fitnessTitle nav{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.fitnessTitle nav a{
+    text-decoration: none;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+.fitnessTitle nav a:hover{
+    color:#cf0000 ;
+}
+.calorieBody{
+    width: 80%;
+    height: 95%;
+}
+.calorieSection{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+.calorieText{
+    width: 35%;
+}
+.calorieText h3{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 25px;
+    color:#850000 ;
+    font-weight: bold;
+}
+.calorieText p{
+    margin-top: 30px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 17px;
+}
+.calorieText img{
+    margin-top: 15px;
+    width: 100%;
+}
+.calorieCounter{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.calorieCounter h5{
+    margin-right: 100px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: #000;
+    font-size: 20px;
+}
+.calorieForm{
+    margin-right: 100px;
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formGroup{
+    width: 100%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.formGroup input, select{
+    width: 100%;
+    margin-bottom: 18px;
+    height: 35px;
+}
+#result{
+    margin-right: 100px;
+    width: 50%;
+}
+.resultTitle, .resultContenido{
+    font-size: 17px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: #000;
+}
+.resultContenido ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.resultContenido ul li{
+    margin-top: 10px;
+}
+@media (max-width: 1440px){
+    .fitnessTitle h1{
+        font-size: 32px;
+    }
+    .fitnessTitle h2{
+        font-size: 30px;
+    }
+    .calorieForm{
+        width: 80%;
+        margin: 0 0 0 0;
+    }
+    #result{
+        margin-top: 10px;
+        margin-right: 0px;
+        width: 80%;
+    }
+}
+@media (max-width: 768px){
+    .fitnessTitle h1{
+        font-size: 28px;
+    }
+    .fitnessTitle h2{
+        font-size: 25px;
+    }
+    .calorieBody{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .calorieSection{
+        margin-top: 10px;
+        margin-right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .calorieText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .calorieText p{
+        margin-top: 10px;
+    }
+    .calorieText img{
+        margin-top: 5px;
+        width: 50%;
+    }
+    .calorieCounter{
+        width: 80%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .calorieCounter h5{
+        margin: 20px 0px 35px 0;
+        width: 100%;
+    }
+    .calorieForm{
+        margin: 0 0 20px 0;
+        width: 90%;
+    }
+}
+@media (max-width: 425px){
+    .fitnessTitle{
+        margin-top: 60px;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    .fitnessTitle h1{
+        width: 40%;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .fitnessTitle h2{
+        width: 50%;
+        font-size: 25px;
+        margin: 10px 0;
+    }
+    .fitnessTitle nav{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .calorieCounter{
+        width: 100%;
+    }
+    .calorieText img{
+        width: 100%;
+    }
+}
+/*----------------------------------------------------------EXPENSES----------------------------------------------------------------------*/
+
+.gridBudget{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+.gridBudgetHijo{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.budgetDashboard{
+    width: 50%;
+    text-align: center;
+}
+.budgetDashboard h3{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 22px;
+}
+.toggle{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 18px;
+}
+.tab1,.tab2,.tab3{
+    cursor: pointer;
+}
+.addExpense, .addIncome{
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #850000;
+    width: max-content;
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addExpense:hover, .addIncome:hover{
+    background-color: #850000;
+    color: #fff;
+}
+.active{
+    color: #000;
+    font-weight: 600;
+}
+.hide{
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.list{
+    width: 100%;
+    height: 50vh;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+.list::-webkit-scrollbar {
+    width: 1px;
+    background-color: lightgray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #850000;
+} 
+#income{
+    color: green;
+}
+#expense{
+    color: red;
+}
+.input{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.input input{
+    width: 40%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+.input input:focus{
+    border: 1px solid #850000;
+}
+.income, .expense{
+    display: flex;
+    width: 100%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#all, #expense, #income{
+    height: max-content;
+    width: 50%;
+}
+#all .buttonsEntry{
+    display: none;
+}
+.buttonsEntry{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonEntry{
+    width:28px;
+    height: 20px;
+    cursor: pointer;
+    background-size: 18px 15px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.buttonEntry img{
+    width: 60%;
+    height: 80%;
+    object-fit: contain;
+    filter: opacity(.7);
+}
+.expenseInfoContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.expenseInfoContainer h3{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.textoBudget{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.textoBudget p{
+    margin: 20px 0 20px 0;
+    font-size: 17px;
+}
+.budgetHeader{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 17px;
+    text-align: center;
+    margin: 20px 0;
+}
+.value{
+    color: royalblue;
+}
+.incomeTotal{
+    color: green;
+}
+.outcomeTotal{
+    color: red;
+}
+
+@media (max-width: 1440px){
+    #all, #expense, #income{
+        width: 80%;
+    }
+    .list{
+        width: 100% ;
+    }
+}
+@media (max-width: 768px){
+    .gridBudget{
+        flex-direction: column;
+    }
+    .gridBudgetHijo{
+        margin-bottom: 50px;
+    }
+    .budgetDashboard{
+        width: 90%;
+    }
+    #all, #expense, #income{
+        width: 100%;
+    }
+}
+
+/*----------------------------------------------------------STUDY----------------------------------------------------------------------*/
+
+.studyMain{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.introStudy{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    width: 50%;
+    padding: 50px;
+}
+.introStudy h2{
+    font-size: 25px;
+}
+.introStudy p{
+    font-size: 18px;
+    margin: 20px 0 20px 0;
+}
+.introStudy ol{
+    margin:15px 0 0 15px;
+    font-size: 18px;
+}
+.pomodoroStudy{
+    width: 50%;
+    padding: 50px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.timerStudyContainer{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    margin-top: 40px;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap
+}
+.timerStudyItem{
+    width: 33% ;
+    text-align: center;
+}
+.timerStudyItem h5{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #850000;
+}
+.timerStudyItem  span{
+    font-size: 20px;
+}
+.timerStudyButtons{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.timerStudyButtons button{
+    cursor: pointer;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #850000;
+    background-color: transparent;
+    border: 1px solid #850000;
+    width: 30%;
+    height: 40px;
+    transition: all .2s ease-out;
+    outline: none;
+}
+.timerStudyButtons button:hover{
+    background-color: #850000;
+    transition: all .2s ease-in;
+    color: #fff;
+}
+.quotesContainer{
+    width: 60%;
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.quotesContainer h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.quotesContainer p{
+    font-size: 17px;
+}
+#author{
+    font-weight: 600;
+}
+.quotesContainer button{
+    cursor: pointer;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #850000;
+    background-color: transparent;
+    border: 1px solid #850000;
+    width: 30%;
+    height: 35px;
+    transition: all .2s ease-out;
+    outline: none;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.quotesContainer button:hover{
+    background-color: #850000;
+    transition: all .2s ease-in;
+    color: #fff;
+}
+/*----------------------------------------------------------TODO LIST----------------------------------------------------------------------*/
+.todoSection{
+    margin-top: 40px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.todoText{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 18px;
+    color: #000;
+    width: 40%;
+}
+.todoText h2{
+    font-size: 25px;
+}
+.todoText p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.todoText ol{
+    font-size: 18px;
+    margin:15px 0 0 15px;
+}
+.todoList{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+.todoList h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.todoInputContainer{
+    width: 80%;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.txtb{
+    width: 70%;
+    height: 100%;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #adadad;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#newTask{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #850000;
+    width: 10% ;
+    height: 40px;
+    color: #850000;
+    cursor: pointer;
+}
+.notcomp{
+    margin-top: 20px;
+    height: 450px;
+    overflow-y: scroll;
+    border: 1px solid #adadad;
+    width: 100%;
+    padding: 30px;
+}
+.notcomp::-webkit-scrollbar {
+    width: 1px;
+    background-color: lightgray;
+}
+.task{
+    border-bottom: 1px solid #0000002c;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width: 1440px){
+    .introStudy{
+        padding-bottom: 0;
+    }
+    .pomodoroStudy{
+        padding-top: 0;
+        margin-top: 80px;
+    }
+}
+@media (max-width: 1024px){
+    .quotesContainer{
+        width: 100%;
+    }
+    .quotesContainer button{
+        width: 40%;
+    }
+}
+@media (max-width: 768px){
+    .studyMain{
+        flex-direction: column;
+    }
+    .introStudy{
+        width: 100%;
+    }
+    .pomodoroStudy{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .todoSection{
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .todoText{
+        width: 100%;
+    }
+    .todoList{
+        width: 100%;
+    }
+}
+@media (max-width: 425px){
+    .introStudy h2{
+        font-size: 23px;
+    }
+    .timerStudyContainer{
+        width: 100%;
+    }
+    .quotesContainer{
+        width: 100%;
+    }
+    .quotesContainer button{
+        width: 100%;
+    }
+    .todoInputContainer{
+        flex-direction: column;
+    }
+    .todoInputContainer input{
+        width: 100%;
+    }
+    #newTask{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .notcomp{
+        width: 100%;
+    }
+}
